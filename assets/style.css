@@ -40,9 +40,10 @@ button {
 .eventHead{
 text-align: center;
 }
-/* .event {
+.event {
   background-color: rgb(126, 125, 125);
-} */
+  content: "Not Avalible";
+}
 .tableBorder {
   border: #000000;
   border-style: double;
