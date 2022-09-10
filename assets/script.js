@@ -17,9 +17,21 @@ var bookedEvent4p = document.querySelector("#event4p");
 var saveButton5p = document.querySelector("#saveBtn5p");
 var bookedEvent5p = document.querySelector("#event5p");
 
+
 // Date
-var Date = moment().format("MMM Do, YYYY");
+setInterval(function(){
+var Date = moment().format("MMM Do, YYYY hh:mm:ss");
 $("#currentDay").text(Date);
+}, 1000);
+
+//Color
+
+function eventColor(){
+    var time = moment().format("hh:mm:ss");
+if (time > "9:00:00") {
+    document.querySelector("#event9a").attr("background-color", "rgb(126, 125, 125)")
+}
+}
 
 function render9Am() {
     var event9a = JSON.parse(localStorage.getItem("event9a"));
@@ -202,4 +214,5 @@ saveButton5p.addEventListener("click", function(event) {
   render2Pm();
   render3Pm();
   render4Pm();
-   render5Pm();
+  render5Pm();
+  eventColor();

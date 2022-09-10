@@ -19,7 +19,7 @@ table{
   width: 100%;
   font-size: larger;
 }
-#saveBtn{
+button {
   width: 100%;
   min-height: 100%;
   padding: 15px;
@@ -40,6 +40,9 @@ table{
 .eventHead{
 text-align: center;
 }
+/* .event {
+  background-color: rgb(126, 125, 125);
+} */
 .tableBorder {
   border: #000000;
   border-style: double;
