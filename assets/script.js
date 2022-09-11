@@ -37,23 +37,26 @@ $("#currentDay").text(Date);
 //     if (timeH < "2"){
 //         document.querySelector("#event9a").style.backgroundColor = "Green";
 //         document.querySelector("#event9a").style.color = "white";
-//         document.querySelector("#event9a").textContent = "Schedule Now";
+        document.querySelector("#event9a").textContent = "Schedule Now";
     
 //     } if (timeH == "2"){
 //         document.querySelector("#event9a").style.backgroundColor = "Red";
 //         document.querySelector("#event9a").style.color = "white";
-//         document.querySelector("#event9a").textContent = "Current Appointment";
+        document.querySelector("#event9a").textContent = "Current Appointment";
 //     }
 //     };
 ///////
+
+
+
 function eventColor9a(){
 
-if(timeH < "9"){
+if(timeH < "1"){
     document.querySelector("#event9a").style.backgroundColor = "Green";
     document.querySelector("#event9a").style.color = "white";
     // document.querySelector("#event9a").textContent = "Schedule Now";
 
-} if (timeH == "9"){
+} if (timeH == "1"){
     document.querySelector("#event9a").style.backgroundColor = "Red";
     document.querySelector("#event9a").style.color = "white";
     // document.querySelector("#event9a").textContent = "Current Appointment";
@@ -65,12 +68,9 @@ function eventColor10a(){
     if(timeH < "10"){
         document.querySelector("#event10a").style.backgroundColor = "Green";
         document.querySelector("#event10a").style.color = "white";
-        document.querySelector("#event10a").textContent = "Schedule Now";
-    
     } if (timeH == "10"){
         document.querySelector("#event10a").style.backgroundColor = "Red";
         document.querySelector("#event10a").style.color = "white";
-        document.querySelector("#event10a").textContent = "Current Appointment";
     }
     };
 function eventColor11a(){
@@ -78,12 +78,12 @@ function eventColor11a(){
     if(timeH < "11"){
         document.querySelector("#event11a").style.backgroundColor = "Green";            
         document.querySelector("#event11a").style.color = "white";
-        document.querySelector("#event11a").textContent = "Schedule Now";
+        // document.querySelector("#event11a").textContent = "Schedule Now";
         
     } if (timeH == "11"){
         document.querySelector("#event11a").style.backgroundColor = "Red";
         document.querySelector("#event11a").style.color = "white";
-        document.querySelector("#event11a").textContent = "Current Appointment";
+        // document.querySelector("#event11a").textContent = "Current Appointment";
     }
         };
 
@@ -92,12 +92,12 @@ function eventColor12p(){
     if (timeH < "12"){
         document.querySelector("#event12p").style.backgroundColor = "Green";  
         document.querySelector("#event12p").style.color = "white";
-        document.querySelector("#event12p").textContent = "Schedule Now";
+        // document.querySelector("#event12p").textContent = "Schedule Now";
     
     } if (timeH == "12"){
         document.querySelector("#event12p").style.backgroundColor = "Red";
         document.querySelector("#event12p").style.color = "white";
-        document.querySelector("#event12p").textContent = "Current Appointment";
+        // document.querySelector("#event12p").textContent = "Current Appointment";
     }
     };
 function eventColor1p(){
@@ -105,12 +105,12 @@ function eventColor1p(){
         if(timeH < "13"){
             document.querySelector("#event1p").style.backgroundColor = "Green";
             document.querySelector("#event1p").style.color = "white";
-            document.querySelector("#event1p").textContent = "Schedule Now";
+            // document.querySelector("#event1p").textContent = "Schedule Now";
         
         } if (timeH == "13"){
             document.querySelector("#event1p").style.backgroundColor = "Red";
             document.querySelector("#event1p").style.color = "white";
-            document.querySelector("#event1p").textContent = "Current Appointment";
+            // document.querySelector("#event1p").textContent = "Current Appointment";
         }
         };
     
@@ -119,12 +119,12 @@ function eventColor2p(){
     if(timeH < "14"){
         document.querySelector("#event2p").style.backgroundColor = "Green";
         document.querySelector("#event2p").style.color = "white";
-        document.querySelector("#event2p").textContent = "Schedule Now";
+        // document.querySelector("#event2p").textContent = "Schedule Now";
     
     } if (timeH == "14"){
         document.querySelector("#event2p").style.backgroundColor = "Red";
         document.querySelector("#event2p").style.color = "white";
-        document.querySelector("#event2p").textContent = "Current Appointment";
+        // document.querySelector("#event2p").textContent = "Current Appointment";
     }
     };
 
@@ -133,12 +133,12 @@ function eventColor3p(){
     if(timeH < "15"){
         document.querySelector("#event3p").style.backgroundColor = "Green";
         document.querySelector("#event3p").style.color = "white";
-        document.querySelector("#event3p").textContent = "Schedule Now";
+        // document.querySelector("#event3p").textContent = "Schedule Now";
         
     } if (timeH == "15"){
         document.querySelector("#event3p").style.backgroundColor = "Red";
         document.querySelector("#event3p").style.color = "white";
-        document.querySelector("#event3p").textContent = "Current Appointment";
+        // document.querySelector("#event3p").textContent = "Current Appointment";
     }
         };
 
@@ -147,12 +147,12 @@ function eventColor4p(){
     if(timeH < "16"){
         document.querySelector("#event4p").style.backgroundColor = "Green";
         document.querySelector("#event4p").style.color = "white";
-        document.querySelector("#event4p").textContent = "Schedule Now";
+        // document.querySelector("#event4p").textContent = "Schedule Now";
         
     } if (timeH == "16"){
         document.querySelector("#event4p").style.backgroundColor = "Red";
         document.querySelector("#event4p").style.color = "white";
-        document.querySelector("#event4p").textContent = "Current Appointment";
+        // document.querySelector("#event4p").textContent = "Current Appointment";
     }
     };
 
@@ -161,12 +161,12 @@ function eventColor5p(){
     if(timeH < "17"){
         document.querySelector("#event5p").style.backgroundColor = "Green";
         document.querySelector("#event5p").style.color = "white";
-        document.querySelector("#event5p").textContent = "Schedule Now";
+        // document.querySelector("#event5p").textContent = "Schedule Now";
     
     } if (timeH == "17"){
         document.querySelector("#event5p").style.backgroundColor = "Red";
         document.querySelector("#event5p").style.color = "white";
-        document.querySelector("#event5p").textContent = "Current Appointment";
+        // document.querySelector("#event5p").textContent = "Current Appointment";
     }
     };
 ////////Color//////////
@@ -342,6 +342,15 @@ saveButton5p.addEventListener("click", function(event) {
   );
   console.log(localStorage.getItem("event5p"));
 
+  
+bookedEvent10a.addEventListener("click", function(event) {
+  event.preventDefault();
+     bookedEvent10a.textContent = "";
+
+
+
+  }
+);
 //   localStorage.clear();
 
   render9Am();

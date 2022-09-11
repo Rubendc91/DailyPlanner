@@ -26,6 +26,21 @@ button {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+/* .Legend{
+  color: red;
+} */
+#gray{
+  background-color: gray;
+  width: 9%;
+}
+#green{
+  background-color: green;
+  width: 9%;
+}
+#red{
+  background-color: red;
+  width: 9%;
+}
 #hour{
   width: 5%;
   border: solid #000000;
@@ -42,7 +57,6 @@ text-align: center;
 }
 .event {
   background-color: rgb(126, 125, 125);
-  content: "Not Avalible";
 }
 .tableBorder {
   border: #000000;
